@@ -473,11 +473,16 @@ body {
     color:#e15f41;
 }
 
-.navbar-brand,
-.navbar-brand:hover {
+.navbar-brand {
 
     color: #fff;
 
+}
+
+.navbar-brand:hover {
+        
+    color:#e15f41;
+    
 }
 
 .navbar-toggler-icon {
