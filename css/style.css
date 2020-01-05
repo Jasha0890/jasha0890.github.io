@@ -551,6 +551,7 @@ body {
 
 /*styling the arrow to scroll down*/
 .arrow {
+
   white-space: nowrap;
   font-size: 4rem;
   position: absolute;
@@ -575,7 +576,7 @@ body {
     color: #e15f41;
 }
 
-}
+
 
 /* this sets the position of the arrow when it's up, so it will move up or down by 14px when you add or remove this class */
 .lift {
