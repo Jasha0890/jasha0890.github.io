@@ -568,7 +568,12 @@ body {
   transition: all 750ms ease-in-out;
   color: #fff;
   scroll-behavior: smooth;
-  
+}
+
+.arrow:hover{
+
+    color: #e15f41;
+}
 
 }
 
