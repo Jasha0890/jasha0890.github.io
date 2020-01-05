@@ -22,7 +22,7 @@ $(document).ready(function() {
 
 	$('#slides').superslides({
 		animation: 'fade',
-		play: 2500,
+		play: 3000,
 		pagination: false
 
 	});
@@ -194,6 +194,21 @@ $(document).ready(function() {
 	    });
 
 	});
-	 /*Scroll to top when arrow up clicked END*/
+    
+    var arrowBounce = function() {
+    var arrow = $(".arrow");
+  
+    if (arrow.hasClass("lift")) {
+        arrow.removeClass("lift");
+  } else {
+        arrow.addClass("lift");
+  }
+
+};
+
+// run the arrowBounce function every 800ms
+setInterval(arrowBounce, 800);
+    
+
 
 });

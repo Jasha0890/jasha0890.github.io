@@ -1,3 +1,8 @@
+html{
+
+
+}
+
 body {
     font-size: 14px;
     color: #333;
@@ -536,10 +541,40 @@ body {
     text-decoration: none;
 
 }
+
 #back2Top:hover {
     
     background-color: transparent;
     color: #e15f41;
+}
+
+
+/*styling the arrow to scroll down*/
+.arrow {
+  white-space: nowrap;
+  font-size: 4rem;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  left: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  transform: translateY(0);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 750ms ease-in-out;
+  -ms-transition: all 750ms ease-in-out;
+  -o-transition: all 750ms ease-in-out;
+  transition: all 750ms ease-in-out;
+  color: #fff;
+  scroll-behavior: smooth;
+  
+
+}
+
+/* this sets the position of the arrow when it's up, so it will move up or down by 14px when you add or remove this class */
+.lift {
+  transform: translateY(14px);
 }
 
 
