@@ -70,8 +70,14 @@ body {
 
 
 .aboutImage {
+    
     max-width: 100%;
 
+}
+
+#about p {
+
+    text-align: justify;
 }
 
 .col-md-7{
