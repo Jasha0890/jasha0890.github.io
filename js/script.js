@@ -212,3 +212,58 @@ setInterval(arrowBounce, 800);
 
 
 });
+
+let noon = 12;
+
+
+let showCurrentTime = () => {
+    
+    console.log("hello");
+    
+    let clock = document.getElementById('clock');
+    
+    let currentTime = new Date();
+    
+    let hours = currentTime.getHours();
+    let minutes = currentTime.getMinutes();
+    let seconds = currentTime.getSeconds();
+    let meridian = "AM";
+    
+    if (hours => noon) {
+        
+        meridian = "PM";
+    }
+    
+    else if (hours > noon) {
+        hours-=12;
+    }
+    
+    if (minutes < 10) {
+        minutes+= "0";
+    }
+    
+    if (seconds < 10) {
+        seconds+= "0";
+    }
+    
+    let clockTime = hours + ':' + minutes + ':' + seconds + " " + meridian;
+    
+    clock.innerTextr = clockTime;
+};
+
+
+let updateClock = () => {
+    let time = new Date().getHours();
+    
+    showCurrentTime();
+};
+
+
+updateClock();
+
+let oneSec = 1000;
+
+setInterval(updateClock, oneSec);
+    
+    
+    
